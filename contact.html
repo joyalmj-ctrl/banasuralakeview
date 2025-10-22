@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Banasura Lake View</title>
+    <meta name="description" content="Contact details, map, and booking inquiry form for Nirvanica Resort." />
+    <meta property="og:title" content="Contact | Nirvanica Resort" />
+    <meta property="og:description" content="Contact details, map, and booking inquiry form for Nirvanica Resort." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/images.jpeg" />
+    <meta name="theme-color" content="#1f4d3a" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">
+          <span class="logo">Banasura Lake View</span>
+          <span class="tag">Wayanad, Kerala</span>
+        </a>
+        <nav>
+          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="rooms.html">Rooms & Rates</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+            <a href="nirvanica.html">Nirvanica Resort</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="booking">
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Contact & Booking</h2>
+            <p class="lead">We’d love to host your stay. Reach us via phone, WhatsApp, or email.</p>
+          </div>
+          <div class="grid contact-grid reveal">
+            <div class="card contact-card">
+              <div class="card-body">
+                <h3>Inquiry Form</h3>
+                <form onsubmit="event.preventDefault(); alert('Thank you! We will get back to you shortly.'); this.reset();">
+                  <input class="input" type="text" name="name" placeholder="Your name" required />
+                  <input class="input" type="email" name="email" placeholder="Email" required />
+                  <input class="input" type="tel" name="phone" placeholder="Phone / WhatsApp" />
+                  <div class="grid cols-2">
+                    <input class="input" type="date" name="checkin" />
+                    <input class="input" type="date" name="checkout" />
+                  </div>
+                  <textarea name="message" placeholder="Tell us about your trip"></textarea>
+                  <button class="btn invert" type="submit">Send Inquiry</button>
+                </form>
+              </div>
+            </div>
+            <div class="grid" style="gap:14px;">
+              <div class="card">
+                <div class="card-body">
+                  <h3>Reach Us</h3>
+                  <p><strong>Phone:</strong> <a href="tel:+919562944780">+91 9562944780</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:joyaljaimon20@gmail.com">joyaljaimon20@gmail.com</a></p>
+                  <p class="muted">Banasura Lake View Resort, Wayanad, Kerala</p>
+                  <p><a href="https://maps.app.goo.gl/CEPqHAQUNRArJRrG7" target="_blank" rel="noopener">Open in Google Maps</a></p>
+                </div>
+              </div>
+              <iframe class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=CEPqHAQUNRArJRrG7&output=embed" aria-label="Google Map - Banasura Lake View Resort" title="Google Map - Banasura Lake View Resort"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Banasura Lake View</h4>
+            <p class="muted">Wayanad, Kerala — eco-friendly stays amidst plantations and misty hills.</p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <div class="grid">
+              <a href="gallery.html">Gallery</a>
+              <a href="rooms.html">Rooms & Rates</a>
+            </div>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <div class="grid">
+              <a href="tel:+919562944780">+91 9562944780</a>
+              <a href="https://wa.me/919562944780" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="mailto:joyaljaimon20@gmail.com">joyaljaimon20@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">© <span id="year"></span> Banasura Lake View. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+
