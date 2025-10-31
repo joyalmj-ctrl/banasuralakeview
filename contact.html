@@ -45,7 +45,18 @@
             <div class="card contact-card">
               <div class="card-body">
                 <h3>Inquiry Form</h3>
-                <form onsubmit="event.preventDefault(); alert('Thank you! We will get back to you shortly.'); this.reset();">
+                <form action="https://formspree.io/f/https://formspree.io/f/mkgpqyqr" method="POST">
+  <input class="input" type="text" name="name" placeholder="Your name" required />
+  <input class="input" type="email" name="email" placeholder="Email" required />
+  <input class="input" type="tel" name="phone" placeholder="Phone / WhatsApp" />
+  <div class="grid cols-2">
+    <input class="input" type="date" name="checkin" />
+    <input class="input" type="date" name="checkout" />
+  </div>
+  <textarea name="message" placeholder="Tell us about your trip"></textarea>
+  <button class="btn invert" type="submit">Send Inquiry</button>
+</form>
+
                   <input class="input" type="text" name="name" placeholder="Your name" required />
                   <input class="input" type="email" name="email" placeholder="Email" required />
                   <input class="input" type="tel" name="phone" placeholder="Phone / WhatsApp" />
