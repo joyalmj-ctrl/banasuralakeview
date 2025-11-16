@@ -136,8 +136,8 @@ function preloadCriticalImages() {
   // Check if current page is gallery or home page where these images might be used
   if (currentPage === 'gallery.html' || currentPage === 'index.html' || currentPage === '') {
     const criticalImages = [
-      'assets/img/WhatsApp%20Image%202025-09-26%20at%208.21.02%20PM.jpeg',
-      'assets/img/WhatsApp%20Image%202025-10-15%20at%208.16.27%20PM.jpeg'
+      'assets/img/room_1.jpeg,
+      'assets/img/room_2.jpeg'
     ];
     
     criticalImages.forEach(src => {
@@ -211,5 +211,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEnhancedLazyLoading();
   preloadCriticalImages();
 });
+
 
 
